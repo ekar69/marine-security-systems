@@ -156,7 +156,7 @@ const Communication = () => {
               </div>
               <div className="text-center">
                 <p className="text-sm text-muted-foreground mb-1">
-                  Время переключения каналов: < 1 секунды
+                  Время переключения каналов: &lt; 1 секунды
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Интеграция до 10 систем связи одновременно
