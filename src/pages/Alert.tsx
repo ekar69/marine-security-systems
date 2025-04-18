@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Bell, Megaphone, Alarm, AlertTriangle, Clock } from "lucide-react";
+import { Bell, Megaphone, AlertTriangle, Clock } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Alert = () => {
@@ -57,7 +57,7 @@ const Alert = () => {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Alarm className="h-5 w-5 text-primary mt-0.5" />
+                <Bell className="h-5 w-5 text-primary mt-0.5" />
                 <div>
                   <span className="font-medium">Интеграция с сенсорами</span>
                   <p className="text-sm text-muted-foreground">
@@ -177,7 +177,7 @@ const Alert = () => {
               
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="flex items-center gap-2 font-medium mb-2">
-                  <Alarm className="h-5 w-5 text-green-600" />
+                  <Clock className="h-5 w-5 text-green-600" />
                   Метеорологические оповещения
                 </h4>
                 <p className="text-sm">
