@@ -1,47 +1,95 @@
 
+import React from "react";
 import Hero from "@/components/Hero";
 import SecuritySystems from "@/components/SecuritySystems";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Anchor, Map, Shield } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div>
       <Hero />
+      
+      <section className="py-16 bg-muted">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Особенности морской безопасности в Карибском море</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card>
+              <CardHeader>
+                <Anchor className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>Климатические условия</CardTitle>
+                <CardDescription>Адаптация к тропическому климату</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p>
+                  Особые условия тропического климата Карибского моря требуют специализированных 
+                  систем, устойчивых к высокой влажности, штормам и ураганам, характерным для этого региона.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardHeader>
+                <Map className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>Географические особенности</CardTitle>
+                <CardDescription>Навигация среди множества островов</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p>
+                  Сложная навигация между многочисленными островами, рифами и отмелями 
+                  требует точных систем позиционирования и навигации для обеспечения безопасности.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardHeader>
+                <Shield className="h-8 w-8 text-primary mb-2" />
+                <CardTitle>Безопасность на воде</CardTitle>
+                <CardDescription>Защита от региональных угроз</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p>
+                  Информационные системы адаптированы для защиты от специфических угроз региона, 
+                  включая природные катаклизмы, навигационные опасности и человеческий фактор.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+      
       <SecuritySystems />
       
       <section className="py-16 container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <h2 className="text-3xl font-bold text-center mb-12">Преимущества комплексного подхода</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-bold mb-4">Безопасность судов в Карибском море</h2>
-            <p className="mb-4 text-muted-foreground">
-              Карибское море представляет собой уникальную среду с особыми требованиями к безопасности морских судов. Современные информационные системы играют ключевую роль в обеспечении навигационной безопасности, защите от пиратства и природных угроз.
+            <h3 className="text-xl font-semibold mb-4">Интеграция систем безопасности</h3>
+            <p className="mb-4">
+              Объединение всех систем безопасности в единый комплекс позволяет достичь максимальной 
+              эффективности защиты морских судов. Наша платформа обеспечивает централизованное 
+              управление и мониторинг всех компонентов безопасности.
             </p>
-            <p className="mb-6 text-muted-foreground">
-              Наш проект предоставляет исчерпывающую информацию о современных технологиях и системах, используемых для защиты морских судов в этом регионе.
-            </p>
-            <Button asChild>
-              <Link to="/about">Узнать больше</Link>
-            </Button>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Единая консоль управления всеми системами</li>
+              <li>Автоматизированные сценарии реагирования</li>
+              <li>Комплексный анализ данных со всех источников</li>
+            </ul>
           </div>
-          <div className="bg-accent rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4">Ключевые преимущества современных систем безопасности:</h3>
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2">
-                <span className="text-primary">✓</span> Круглосуточный мониторинг судов
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-primary">✓</span> Оперативное оповещение об угрозах
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-primary">✓</span> Интеграция с глобальными навигационными системами
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-primary">✓</span> Защита от пиратских нападений
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-primary">✓</span> Устойчивость к экстремальным погодным условиям
-              </li>
+          
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Соответствие международным стандартам</h3>
+            <p className="mb-4">
+              Все наши системы разработаны в соответствии с международными стандартами безопасности 
+              морских перевозок и учитывают специфические требования к судоходству в Карибском море.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Соответствие требованиям IMO (International Maritime Organization)</li>
+              <li>Сертификация по стандартам ISO для морской безопасности</li>
+              <li>Регулярные обновления в соответствии с изменениями нормативов</li>
             </ul>
           </div>
         </div>
