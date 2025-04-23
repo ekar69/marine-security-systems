@@ -13,6 +13,7 @@ import Communication from "./pages/Communication";
 import Alert from "./pages/Alert";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Protection from "./pages/Protection";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/surveillance" element={<Surveillance />} />
             <Route path="/communication" element={<Communication />} />
             <Route path="/alert" element={<Alert />} />
+            <Route path="/protection" element={<Protection />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
